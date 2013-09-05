@@ -13,7 +13,7 @@ class Wait extends noflo.Component
       @delay = parseInt delay
 
     @inPorts.client.on 'data', (client) =>
-      setTimeout => 
+      setTimeout =>
         # Pass client to the output port
         @outPorts.client.send client
         @outPorts.client.disconnect()
