@@ -24,3 +24,8 @@ Land() CLIENT -> IN End(core/Drop)
 ```
 
 You can find more examples in <https://github.com/cannonerd/droning>.
+
+## TODO
+
+* Implement the rest of the motion commands as components
+* Components for reading AR.Drone sensor output
