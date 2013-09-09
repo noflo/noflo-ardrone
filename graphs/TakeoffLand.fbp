@@ -1,0 +1,8 @@
+# Start by connecting to drone. We could provide IP here
+'' -> IP Connect(ardrone/Connect)
+# Tell drone to take off
+Connect() CLIENT -> CLIENT Takeoff(ardrone/Takeoff)
+# Tell drone to land
+Takeoff() CLIENT -> CLIENT Land(ardrone/Land)
+# And that is all, folks!
+Land() CLIENT -> IN End(core/Drop)
