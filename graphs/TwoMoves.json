@@ -5,57 +5,57 @@
     "Connect": {
       "component": "ardrone/Connect",
       "metadata": {
-        "x": 62,
-        "y": 275
+        "x": 94,
+        "y": 159
       }
     },
     "Takeoff": {
       "component": "ardrone/Takeoff",
       "metadata": {
-        "x": 287,
-        "y": 336
+        "x": 96,
+        "y": 285
       }
     },
     "Land": {
       "component": "ardrone/Land",
       "metadata": {
-        "x": 1206,
-        "y": 558
+        "x": 1131,
+        "y": 304
       }
     },
     "SplitClient": {
       "component": "core/Split",
       "metadata": {
-        "x": 506,
-        "y": 377
+        "x": 328,
+        "y": 284
       }
     },
     "Forward": {
       "component": "ardrone/MoveForward",
       "metadata": {
-        "x": 658,
-        "y": 156
+        "x": 579,
+        "y": 105
       }
     },
     "Left": {
       "component": "ardrone/MoveLeft",
       "metadata": {
-        "x": 927,
-        "y": 444
+        "x": 578,
+        "y": 443
       }
     },
     "KeepRunning": {
       "component": "ardrone/Wait",
       "metadata": {
-        "x": 943,
-        "y": 169
+        "x": 852,
+        "y": 106
       }
     },
     "Stop": {
       "component": "ardrone/Stop",
       "metadata": {
-        "x": 1190,
-        "y": 318
+        "x": 1128,
+        "y": 118
       }
     }
   },
