@@ -1,0 +1,179 @@
+{
+  "properties": {},
+  "exports": [
+    {
+      "public": "client",
+      "private": "forward.client"
+    },
+    {
+      "public": "client",
+      "private": "stopturning.client"
+    }
+  ],
+  "processes": {
+    "Forward": {
+      "component": "ardrone/MoveForward",
+      "metadata": {
+        "x": 97,
+        "y": 262
+      }
+    },
+    "KeepRunning": {
+      "component": "ardrone/Wait",
+      "metadata": {
+        "x": 326,
+        "y": 259
+      }
+    },
+    "StopRunning": {
+      "component": "ardrone/Stop",
+      "metadata": {
+        "x": 548,
+        "y": 270
+      }
+    },
+    "Turn": {
+      "component": "ardrone/TurnClockwise",
+      "metadata": {
+        "x": 700.796875,
+        "y": 452
+      }
+    },
+    "KeepTurning": {
+      "component": "ardrone/Wait",
+      "metadata": {
+        "x": 933.796875,
+        "y": 450
+      }
+    },
+    "StopTurning": {
+      "component": "ardrone/Stop",
+      "metadata": {
+        "x": 1167.796875,
+        "y": 458
+      }
+    },
+    "Stabilize": {
+      "component": "ardrone/Wait",
+      "metadata": {
+        "x": 616.796875,
+        "y": 351
+      }
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "process": "Forward",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "KeepRunning",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 8
+      }
+    },
+    {
+      "src": {
+        "process": "KeepRunning",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "StopRunning",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 8
+      }
+    },
+    {
+      "src": {
+        "process": "Turn",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "KeepTurning",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "KeepTurning",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "StopTurning",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "StopRunning",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "Stabilize",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "Stabilize",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "Turn",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "data": "0.2",
+      "tgt": {
+        "process": "Forward",
+        "port": "speed"
+      }
+    },
+    {
+      "data": "2000",
+      "tgt": {
+        "process": "KeepRunning",
+        "port": "delay"
+      }
+    },
+    {
+      "data": "0.5",
+      "tgt": {
+        "process": "Turn",
+        "port": "speed"
+      }
+    },
+    {
+      "data": "1800",
+      "tgt": {
+        "process": "KeepTurning",
+        "port": "delay"
+      }
+    },
+    {
+      "data": "500",
+      "tgt": {
+        "process": "Stabilize",
+        "port": "delay"
+      }
+    }
+  ]
+}

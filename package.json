@@ -33,7 +33,8 @@
       "Wait": "./components/Wait.coffee"
     },
     "graphs": {
-      "TakeoffLand": "./graphs/TakeoffLand.fbp",
+      "ForwardAndTurn": "./graphs/ForwardAndTurn.json",
+      "FlySquare": "./graphs/FlySquare.json",
       "TwoMoves": "./graphs/TwoMoves.json"
     }
   },

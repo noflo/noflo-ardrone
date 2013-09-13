@@ -18,6 +18,7 @@ class Connect extends noflo.Component
       client = arDrone.createClient options
 
       # Pass it to the output port
+      return unless @outPorts.client.isAttached()
       @outPorts.client.send client
       @outPorts.client.disconnect()
 
