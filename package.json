@@ -20,7 +20,9 @@
     "components": {
       "Connect": "./components/Connect.coffee",
       "Land": "./components/Land.coffee",
+      "MoveBackward": "./components/MoveBackward.coffee",
       "MoveDown": "./components/MoveDown.coffee",
+      "MoveForward": "./components/MoveForward.coffee",
       "MoveUp": "./components/MoveUp.coffee",
       "Takeoff": "./components/Takeoff.coffee",
       "TurnClockwise": "./components/TurnClockwise.coffee",
