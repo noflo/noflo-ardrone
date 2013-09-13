@@ -33,7 +33,8 @@
       "Wait": "./components/Wait.coffee"
     },
     "graphs": {
-      "TakeoffLand": "./graphs/TakeoffLand.fbp"
+      "TakeoffLand": "./graphs/TakeoffLand.fbp",
+      "TwoMoves": "./graphs/TwoMoves.json"
     }
   },
   "dependencies": {

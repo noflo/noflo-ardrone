@@ -1,0 +1,180 @@
+{
+  "properties": {},
+  "exports": [],
+  "processes": {
+    "Connect": {
+      "component": "ardrone/Connect",
+      "metadata": {
+        "x": 62,
+        "y": 275
+      }
+    },
+    "Takeoff": {
+      "component": "ardrone/Takeoff",
+      "metadata": {
+        "x": 287,
+        "y": 336
+      }
+    },
+    "Land": {
+      "component": "ardrone/Land",
+      "metadata": {
+        "x": 1206,
+        "y": 558
+      }
+    },
+    "SplitClient": {
+      "component": "core/Split",
+      "metadata": {
+        "x": 506,
+        "y": 377
+      }
+    },
+    "Forward": {
+      "component": "ardrone/MoveForward",
+      "metadata": {
+        "x": 658,
+        "y": 156
+      }
+    },
+    "Left": {
+      "component": "ardrone/MoveLeft",
+      "metadata": {
+        "x": 927,
+        "y": 444
+      }
+    },
+    "KeepRunning": {
+      "component": "ardrone/Wait",
+      "metadata": {
+        "x": 943,
+        "y": 169
+      }
+    },
+    "Stop": {
+      "component": "ardrone/Stop",
+      "metadata": {
+        "x": 1190,
+        "y": 318
+      }
+    }
+  },
+  "connections": [
+    {
+      "src": {
+        "process": "Connect",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "Takeoff",
+        "port": "client"
+      }
+    },
+    {
+      "src": {
+        "process": "Takeoff",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "SplitClient",
+        "port": "in"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "SplitClient",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "Forward",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "SplitClient",
+        "port": "out"
+      },
+      "tgt": {
+        "process": "Left",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "Forward",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "KeepRunning",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "KeepRunning",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "Stop",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "src": {
+        "process": "Stop",
+        "port": "client"
+      },
+      "tgt": {
+        "process": "Land",
+        "port": "client"
+      },
+      "metadata": {
+        "route": 0
+      }
+    },
+    {
+      "data": "",
+      "tgt": {
+        "process": "Connect",
+        "port": "ip"
+      }
+    },
+    {
+      "data": "0.2",
+      "tgt": {
+        "process": "Left",
+        "port": "speed"
+      }
+    },
+    {
+      "data": "0.2",
+      "tgt": {
+        "process": "Forward",
+        "port": "speed"
+      }
+    },
+    {
+      "data": "2000",
+      "tgt": {
+        "process": "KeepRunning",
+        "port": "delay"
+      }
+    }
+  ]
+}
