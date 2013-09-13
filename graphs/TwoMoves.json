@@ -19,8 +19,8 @@
     "Land": {
       "component": "ardrone/Land",
       "metadata": {
-        "x": 1131,
-        "y": 304
+        "x": 1234,
+        "y": 282
       }
     },
     "SplitClient": {
@@ -33,29 +33,29 @@
     "Forward": {
       "component": "ardrone/MoveForward",
       "metadata": {
-        "x": 579,
-        "y": 105
+        "x": 538,
+        "y": 104
       }
     },
     "Left": {
       "component": "ardrone/MoveLeft",
       "metadata": {
-        "x": 578,
-        "y": 443
+        "x": 531,
+        "y": 436
       }
     },
     "KeepRunning": {
       "component": "ardrone/Wait",
       "metadata": {
-        "x": 852,
-        "y": 106
+        "x": 774,
+        "y": 272
       }
     },
     "Stop": {
       "component": "ardrone/Stop",
       "metadata": {
-        "x": 1128,
-        "y": 118
+        "x": 1002,
+        "y": 283
       }
     }
   },
@@ -68,6 +68,9 @@
       "tgt": {
         "process": "Takeoff",
         "port": "client"
+      },
+      "metadata": {
+        "route": 8
       }
     },
     {
@@ -80,7 +83,7 @@
         "port": "in"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
@@ -93,7 +96,7 @@
         "port": "client"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
@@ -106,7 +109,7 @@
         "port": "client"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
@@ -119,7 +122,7 @@
         "port": "client"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
@@ -132,7 +135,7 @@
         "port": "client"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
@@ -145,7 +148,7 @@
         "port": "client"
       },
       "metadata": {
-        "route": 0
+        "route": 8
       }
     },
     {
