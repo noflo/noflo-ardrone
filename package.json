@@ -22,6 +22,7 @@
       "Land": "./components/Land.coffee",
       "Takeoff": "./components/Takeoff.coffee",
       "TurnClockwise": "./components/TurnClockwise.coffee",
+      "TurnCounterClockwise": "./components/TurnCounterClockwise.coffee",
       "Stop": "./components/Stop.coffee",
       "Wait": "./components/Wait.coffee"
     },
