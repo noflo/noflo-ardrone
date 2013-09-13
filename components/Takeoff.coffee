@@ -14,6 +14,7 @@ class Takeoff extends noflo.Component
       # Initiate takeoff
       client.takeoff =>
         # Pass client to the output port once airborne
+        return unless @outPorts.client.isAttached()
         @outPorts.client.send client
         @outPorts.client.disconnect()
 

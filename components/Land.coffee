@@ -14,6 +14,7 @@ class Land extends noflo.Component
       # Initiate landing
       client.land =>
         # Pass client to the output port once landed
+        return unless @outPorts.client.isAttached()
         @outPorts.client.send client
         @outPorts.client.disconnect()
 

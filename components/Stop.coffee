@@ -14,6 +14,7 @@ class Stop extends noflo.Component
       # Stop movement and hover
       client.stop()
       # Pass client to the output port immediately
+      return unless @outPorts.client.isAttached()
       @outPorts.client.send client
       @outPorts.client.disconnect()
 
