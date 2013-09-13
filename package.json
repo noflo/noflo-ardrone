@@ -23,6 +23,8 @@
       "MoveBackward": "./components/MoveBackward.coffee",
       "MoveDown": "./components/MoveDown.coffee",
       "MoveForward": "./components/MoveForward.coffee",
+      "MoveLeft": "./components/MoveLeft.coffee",
+      "MoveRight": "./components/MoveRight.coffee",
       "MoveUp": "./components/MoveUp.coffee",
       "Takeoff": "./components/Takeoff.coffee",
       "TurnClockwise": "./components/TurnClockwise.coffee",
