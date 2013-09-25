@@ -1,7 +1,7 @@
 {
   "name": "noflo-ardrone",
   "description": "ARDrone components for NoFlo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Henri Bergius",
     "email": "henri.bergius@iki.fi"
@@ -31,11 +31,6 @@
       "TurnCounterClockwise": "./components/TurnCounterClockwise.coffee",
       "Stop": "./components/Stop.coffee",
       "Wait": "./components/Wait.coffee"
-    },
-    "graphs": {
-      "ForwardAndTurn": "./graphs/ForwardAndTurn.json",
-      "FlySquare": "./graphs/FlySquare.json",
-      "TwoMoves": "./graphs/TwoMoves.json"
     }
   },
   "dependencies": {
@@ -55,15 +50,7 @@
     "test": "grunt test"
   },
   "keywords": [],
-  "readme": "# noflo-ardrone [![Build Status](https://secure.travis-ci.org/noflo/noflo-ardrone.png?branch=master)](http://travis-ci.org/noflo/noflo-ardrone)\n\nARDrone components for NoFlo\n",
-  "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/noflo/noflo-ardrone/issues"
-  },
-  "_id": "noflo-ardrone@0.1.0",
-  "dist": {
-    "shasum": "63ab272157f5f2b02a8e06d911688bc4ee7e62d9"
-  },
-  "_resolved": "git://github.com/noflo/noflo-ardrone.git#812b4465697acabb7991fdafdce36838124e054d",
-  "_from": "noflo-ardrone@git://github.com/noflo/noflo-ardrone.git"
+  }
 }
