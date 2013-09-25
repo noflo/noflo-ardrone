@@ -1,6 +1,7 @@
 noflo = require 'noflo'
 
 class Land extends noflo.Component
+  description: 'Commands the AR.Drone to land immediately'
   constructor: ->
     @inPorts =
       client: new noflo.Port 'object'
@@ -8,8 +9,8 @@ class Land extends noflo.Component
       client: new noflo.Port 'object'
 
     @inPorts.client.on 'data', (client) =>
-      unless client.takeoff
-        throw new Error 'Client unable to take off'
+      unless client.land
+        throw new Error 'Client unable to land'
 
       # Initiate landing
       client.land =>

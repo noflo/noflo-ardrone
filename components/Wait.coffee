@@ -1,6 +1,8 @@
 noflo = require 'noflo'
 
 class Wait extends noflo.Component
+  description: 'Holds the client connection until the given timeout elapses
+  and then passes it forward'
   constructor: ->
     @delay = 500
     @inPorts =

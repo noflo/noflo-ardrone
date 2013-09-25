@@ -1,6 +1,7 @@
 noflo = require 'noflo'
 
 class Takeoff extends noflo.Component
+  description: 'Commands the AR.Drone to take off immeditately'
   constructor: ->
     @inPorts =
       client: new noflo.Port 'object'

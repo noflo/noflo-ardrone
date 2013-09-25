@@ -2,6 +2,7 @@ noflo = require 'noflo'
 
 class Stop extends noflo.Component
   constructor: ->
+    description: 'Makes the AR.Drone stop and hover'
     @inPorts =
       client: new noflo.Port 'object'
     @outPorts =

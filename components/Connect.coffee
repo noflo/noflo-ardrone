@@ -2,6 +2,7 @@ noflo = require 'noflo'
 arDrone = require 'ar-drone'
 
 class Connect extends noflo.Component
+  description: 'Establish a connection to the AR.Drone'
   constructor: ->
     @inPorts =
       ip: new noflo.Port 'string'

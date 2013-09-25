@@ -4,7 +4,7 @@ class MovementComponent extends noflo.Component
   constructor: (movement, description) ->
     @client = null
     @speed = null
-    @description = "Makes the AR.Drone #{description}"
+    @description = "Makes the AR.Drone #{description} at given speed"
 
     @inPorts =
       speed: new noflo.Port 'number'
