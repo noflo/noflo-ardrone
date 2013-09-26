@@ -6,6 +6,7 @@ class Connect extends noflo.Component
   constructor: ->
     @inPorts =
       ip: new noflo.Port 'string'
+      connect: new noflo.Port 'bang'
     @outPorts =
       client: new noflo.Port 'object'
 
@@ -14,13 +15,18 @@ class Connect extends noflo.Component
       options = {}
       if typeof data is 'string'
         options.ip = data
+      @connectDrone options
 
-      # Connect to the drone
-      client = arDrone.createClient options
+    @inPorts.connect.on 'data', =>
+      @connectDrone {}
 
-      # Pass it to the output port
-      return unless @outPorts.client.isAttached()
-      @outPorts.client.send client
-      @outPorts.client.disconnect()
+  connectDrone: (options) ->
+    # Connect to the drone
+    client = arDrone.createClient options
+
+    # Pass it to the output port
+    return unless @outPorts.client.isAttached()
+    @outPorts.client.send client
+    @outPorts.client.disconnect()
 
 exports.getComponent = -> new Connect

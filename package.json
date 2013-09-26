@@ -20,6 +20,7 @@
     "components": {
       "Connect": "./components/Connect.coffee",
       "Land": "./components/Land.coffee",
+      "ListenNavData": "./components/ListenNavData.coffee",
       "MoveBackward": "./components/MoveBackward.coffee",
       "MoveDown": "./components/MoveDown.coffee",
       "MoveForward": "./components/MoveForward.coffee",
@@ -44,7 +45,7 @@
     "chai": "~1.5.0",
     "mocha": "~1.9.0",
     "grunt-contrib-watch": "~0.3.1",
-    "noflo-core": "~0.1.1"
+    "noflo-core": "~0.1.2"
   },
   "scripts": {
     "test": "grunt test"
