@@ -17,6 +17,7 @@
     }
   ],
   "noflo": {
+    "icon": "plane",
     "components": {
       "Connect": "./components/Connect.coffee",
       "Land": "./components/Land.coffee",
