@@ -6,7 +6,7 @@ class Wait extends noflo.Component
   constructor: ->
     @delay = 500
     @inPorts =
-      delay: new noflo.Port 'integer'
+      delay: new noflo.Port 'int'
       client: new noflo.Port 'object'
     @outPorts =
       client: new noflo.Port 'object'
