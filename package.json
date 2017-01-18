@@ -36,17 +36,17 @@
     }
   },
   "dependencies": {
-    "ar-drone": "0.3.3",
-    "noflo": "0.7.9",
-    "noflo-core": "0.2.3"
+    "ar-drone": "~0.3.3",
+    "noflo": "0.x >= 0.7",
+    "noflo-core": "~0.2.3"
   },
   "devDependencies": {
-    "chai": "3.5.0",
-    "grunt": "1.0.1",
-    "grunt-coffeelint": "0.0.16",
-    "grunt-contrib-watch": "1.0.0",
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-coffeelint": "^0.0.16",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-mocha-test": "^0.13.2",
-    "mocha": "3.2.0"
+    "mocha": "^3.2.0"
   },
   "scripts": {
     "test": "grunt test"
