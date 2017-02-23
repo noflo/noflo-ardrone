@@ -1,6 +1,8 @@
 noflo = require 'noflo'
 arDrone = require 'ar-drone'
 
+# @runtime noflo-nodejs
+
 class Connect extends noflo.Component
   description: 'Establish a connection to the AR.Drone'
   constructor: ->

@@ -1,5 +1,9 @@
 {
-  "properties": {},
+  "properties": {
+    "environment": {
+      "type": "noflo-nodejs"
+    }
+  },
   "exports": [],
   "processes": {
     "Connect": {

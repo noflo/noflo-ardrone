@@ -1,5 +1,7 @@
 noflo = require 'noflo'
 
+# @runtime noflo-nodejs
+
 class ListenNavData extends noflo.Component
   description: 'Listens to telemetry from the AR.Drone and passes it onwards'
   constructor: ->

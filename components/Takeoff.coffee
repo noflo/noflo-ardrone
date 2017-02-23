@@ -1,5 +1,7 @@
 noflo = require 'noflo'
 
+# @runtime noflo-nodejs
+
 class Takeoff extends noflo.Component
   description: 'Commands the AR.Drone to take off immeditately'
   constructor: ->

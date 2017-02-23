@@ -1,5 +1,7 @@
 noflo = require 'noflo'
 
+# @runtime noflo-nodejs
+
 class Wait extends noflo.Component
   description: 'Holds the client connection until the given timeout elapses
   and then passes it forward'

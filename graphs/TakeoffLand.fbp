@@ -1,3 +1,4 @@
+# @runtime noflo-nodejs
 # Start by connecting to drone. We could provide IP here
 '' -> IP Connect(ardrone/Connect)
 # Tell drone to take off

@@ -1,5 +1,7 @@
 MovementComponent = require '../lib/MovementComponent.coffee'
 
+# @runtime noflo-nodejs
+
 class MoveBackward extends MovementComponent
   constructor: ->
     super 'back', 'move backward'

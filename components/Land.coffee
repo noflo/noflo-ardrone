@@ -1,5 +1,7 @@
 noflo = require 'noflo'
 
+# @runtime noflo-nodejs
+
 class Land extends noflo.Component
   description: 'Commands the AR.Drone to land immediately'
   constructor: ->

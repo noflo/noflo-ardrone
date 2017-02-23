@@ -1,5 +1,7 @@
 noflo = require 'noflo'
 
+# @runtime noflo-nodejs
+
 class Stop extends noflo.Component
   description: 'Makes the AR.Drone stop and hover'
   constructor: ->
