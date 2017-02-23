@@ -1,7 +1,7 @@
 {
   "name": "noflo-ardrone",
   "description": "ARDrone components for NoFlo",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "author": {
     "name": "Henri Bergius",
     "email": "henri.bergius@iki.fi"
@@ -46,7 +46,7 @@
   "scripts": {
     "test": "grunt test"
   },
-  "keywords": ["noflo"],
+  "keywords": ["noflo", "ardrone"],
   "bugs": {
     "url": "https://github.com/noflo/noflo-ardrone/issues"
   }
