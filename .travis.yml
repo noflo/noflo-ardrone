@@ -1,5 +1,13 @@
 language: node_js
 node_js:
-  - '4.6'
+- '4.6'
 before_script:
-  - npm install -g grunt-cli
+- npm install -g grunt-cli
+deploy:
+  provider: npm
+  email: henri.bergius@iki.fi
+  api_key:
+    secure: fd/dCWuoAwFRT6Ux9V26Ojej0YjUBICmE4JentpwI5W7MX3asmx1hSVOC1KXt1VwHeFQZk/8PHO/MqTi2JedfBmaRwSiDpfNmUpUx/Ax+mzXK9x348i9+QZZyILjE+MQHjH4awVY3Tr9clFCIELypTF3CnACGuQaqyVx1Mz5XGI=
+  on:
+    tags: true
+    repo: noflo/noflo-ardrone
