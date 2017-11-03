@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "ar-drone": "~0.3.3",
-    "noflo": "0.x >= 0.7",
+    "noflo": "1.0.0",
     "noflo-core": "~0.2.3"
   },
   "devDependencies": {
